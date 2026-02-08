@@ -9,15 +9,25 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
+	world.gravity.y = 2.7 * 9.81;
+	cnv = new Canvas(1000,1000);
+	tom = new Sprite(150,150,50,50,'d');
+	tom.color = '#ffba5f';
+	tom.rotationSpeed = 6.7;
 
+	acob = new Sprite(250,250, 25, 'd');
+	acob.color = '#00ff00';
+	acob.vel.x = 6.32;
+	acob.vel.y = 3;
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	
+	background('#800000');
 }
+
 
 /*******************************************************/
 //  END OF APP

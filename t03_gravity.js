@@ -19,6 +19,10 @@ function setup() {
 	acob.color = '#00ff00';
 	acob.vel.x = 6.32;
 	acob.vel.y = 3;
+	acob1 = new Sprite(250,250, 25, 'n');
+	acob1.color = '#00aeff';
+	ob1.vel.x = 6.32;
+	vel.y = -3;
 }
 	
 /*******************************************************/

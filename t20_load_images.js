@@ -105,6 +105,7 @@ function aliens(){
 /*******************************************************/
 function draw() {
 	background(imgSpace);
+	
 
 }
 

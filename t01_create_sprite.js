@@ -8,13 +8,27 @@
 // setup()
 /*******************************************************/
 function setup() {
+	width = random(300,600);
+	height = random(300,600);
+	spriteX= random(50,150);
+	spriteY=  random(50,150); 
 	console.log("setup: ");
-	cnv = new Canvas(1000,1000);
-	tom = new Sprite(150,150,50,50,'d');
-	tom.color = '#ffba5f';
+	cnv = new Canvas(width, height);
 
-	acob = new Sprite(250,250, 25, 'd');
-	acob.color = '#00ff00';
+	red = new Sprite(spriteX / 2, spriteY / 2 , spriteX, spriteY);
+	red.color = 'red';
+
+	green = new Sprite( width - (spriteX / 2), spriteY / 2 , spriteX, spriteY);
+	green.color = 'green';
+
+	blue = new Sprite( width - (spriteX / 2), height - (spriteY / 2) , spriteX, spriteY);
+	blue.color = 'blue';
+
+	yellow = new Sprite( spriteX / 2, height - (spriteY / 2) ,  spriteX, spriteY);
+	yellow.color = 'yellow';
+
+	purple = new Sprite( width / 2, height / 2  ,  spriteX, spriteY);
+	purple.color = 'purple';
 }
 	
 /*******************************************************/

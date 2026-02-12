@@ -63,8 +63,7 @@ function walls(){
 //func2Call()
 //********************************************************************* */
 function func2Call(_acob, _ssss) {
-		console.log("func2")
-
+	console.log("func2")
 	_ssss.remove();
 }
 

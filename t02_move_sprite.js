@@ -10,14 +10,17 @@
 function setup() {
 	console.log("setup: ");
 	cnv = new Canvas(1000,1000);
-	tom = new Sprite(150,150,50,50,'d');
-	tom.color = '#ffba5f';
-	tom.rotationSpeed = 6.7;
-
-	acob = new Sprite(250,250, 25, 'd');
-	acob.color = '#00ff00';
-	acob.vel.x = 6.32;
-	acob.vel.y = 3;
+	for(var i =0; i<11;i++){
+		var block = new Sprite(1000 - (i*80 + 40), i*80 + 60,40/*0 - (i * 40)*/,40);
+		block.color = color(random(255),random(255),random(255));
+	}
+	/*for(i=0;i<10;i++){
+		var spriteColor = color(random(255), random(255), random(255));
+		for(j=0;j<10;j++){
+			var block = new Sprite(j * 80 + 40, i* 80 + 60, 40, 40);
+			block.color = spriteColor;
+		}
+	}*/
 }
 	
 /*******************************************************/
